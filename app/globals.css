@@ -1,4 +1,38 @@
 @import "tailwindcss";
+@media (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(140%);
+    opacity: 0;
+  }
+}
+
+.animate-scrollLine {
+  animation: scrollLine 2.2s ease-in-out infinite;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: black;
+  scrollbar-width: none;
+}
 
 :root {
   --background: #ffffff;
