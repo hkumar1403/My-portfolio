@@ -42,7 +42,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-sm tracking-widest text-gray-500 mb-6"
         >
-          …/ PROJECTS …
+          …&lt; PROJECTS /&gt; …
         </motion.p>
 
         {/* Heading */}

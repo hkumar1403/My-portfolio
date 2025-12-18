@@ -20,7 +20,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-sm tracking-widest text-gray-500 mb-6"
           >
-            …/ ABOUT ME …
+            …&lt; ABOUT ME /&gt; …
           </motion.p>
 
           {/* Intro text */}

@@ -1,9 +1,6 @@
-@import "tailwindcss";
-@media (pointer: fine) {
-  * {
-    cursor: none;
-  }
-}
+@import 'tailwindcss';
+@plugin 'lightswind/plugin';
+
 
 @keyframes scrollLine {
   0% {
