@@ -78,6 +78,12 @@ export default function SmokeyCursor({
   followMouse = true,
   autoColors = true,
 }: SmokeyCursorProps) {
+  // Disable smokey cursor on touch devices
+  if (typeof window !== "undefined") {
+    const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+    if (isTouchDevice) return null;
+  }
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {

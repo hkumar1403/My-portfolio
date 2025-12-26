@@ -8,10 +8,10 @@ export default function About() {
       id="about"
       className="relative min-h-screen bg-black text-white px-8 md:px-16 py-32 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
         {/* LEFT COLUMN */}
-        <div>
+        <div className="text-center md:text-left">
           {/* Section label */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl leading-relaxed text-gray-200 max-w-xl"
+            className="text-xl sm:text-2xl md:text-3xl leading-relaxed text-gray-200 max-w-xl"
           >
             I’m a full-stack developer focused on building clean,
             scalable, and maintainable web applications with strong
@@ -37,7 +37,7 @@ export default function About() {
           </motion.h3>
 
           {/* Skills */}
-          <div className="mt-16 space-y-6">
+         <div className="mt-12 sm:mt-16 space-y-4 sm:space-y-6">
             <SkillCard
               title="Front-end"
               items="HTML / CSS / JavaScript / React JS / Next JS / Tailwind"

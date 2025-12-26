@@ -5,24 +5,24 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Spreadsheet Web App",
+    title: "Astrel",
     description:
       "A performant spreadsheet-like web application inspired by Excel, focused on keyboard navigation and large data handling.",
-    stack: "Next.js / React / Zustand / Virtualization",
-    link: "https://github.com/yourusername/project",
+    stack: "Next.js / Tailwind CSS / Node.js / MongoDB",
+    link: "https://github.com/hkumar1403/Workbook",
   },
   {
-    title: "Portfolio Website",
+    title: "Codexa",
     description:
-      "A cinematic developer portfolio with custom cursor, motion-driven UI, and a strong focus on typography.",
-    stack: "Next.js / Tailwind CSS / Framer Motion",
-    link: "https://yourportfolio.com",
+      "A browser-based IDE for HTML, CSS, and JavaScript, built to explore how online code editors work under the hood.",
+    stack: "Next.js / Tailwind CSS / Monaco Editor",
+    link: "https://codexa-lemon.vercel.app/",
   },
   {
-    title: "REST API Backend",
+    title: "Nitrolube",
     description:
-      "A clean REST API with authentication, pagination, and structured error handling.",
-    stack: "Node.js / Express / MongoDB",
+      "Built a clean, responsive website for an automotive lubricants brand using Next.js and Tailwind CSS, focusing on simplicity, clarity, and the client’s business requirements.",
+    stack: "Next.js / Tailwind CSS",
     link: "https://github.com/yourusername/api",
   },
 ];
@@ -31,9 +31,16 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative bg-black text-white px-8 md:px-16 py-32"
+      className="relative bg-black text-white px-6 sm:px-8 md:px-16 py-24 md:py-32"
     >
-      <div className="max-w-7xl mx-auto">
+      <div
+        className="
+    max-w-7xl mx-auto
+    flex flex-col
+    items-center md:items-start
+    text-center md:text-left
+  "
+      >
         {/* Section label */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -51,13 +58,13 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-semibold mb-20"
+          className="text-3xl sm:text-4xl md:text-6xl font-semibold mb-16 max-w-xl"
         >
           Selected work
         </motion.h2>
 
         {/* Projects list */}
-        <div className="space-y-16">
+        <div className="mt-16 w-full max-w-5xl space-y-12 md:space-y-16">
           {projects.map((project, i) => (
             <ProjectRow key={i} {...project} />
           ))}
@@ -87,9 +94,16 @@ function ProjectRow({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
-      className="group block border-t border-white/10 pt-10"
+      className="
+  group block
+  border-t border-white/10
+  pt-10
+  rounded-xl
+  transition-colors
+  hover:bg-white/2
+"
     >
-      <div className="flex items-start justify-between gap-8">
+      <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-6 md:gap-8">
         <div>
           <h3
             className="text-3xl md:text-4xl font-medium
@@ -107,9 +121,14 @@ function ProjectRow({
         </div>
 
         <div
-          className="mt-2 opacity-0 translate-y-2
-                     transition-all duration-300
-                     group-hover:opacity-100 group-hover:translate-y-0"
+          className="
+    mt-2
+    hidden md:block
+    opacity-0 translate-y-2
+    transition-all duration-300
+    group-hover:opacity-100
+    group-hover:translate-y-0
+  "
         >
           <ArrowUpRight className="w-6 h-6 text-gray-400" />
         </div>
