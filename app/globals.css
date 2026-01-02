@@ -1,6 +1,5 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin 'lightswind/plugin';
-
 
 @keyframes scrollLine {
   0% {
@@ -19,7 +18,6 @@
 .animate-scrollLine {
   animation: scrollLine 2.2s ease-in-out infinite;
 }
-
 
 html {
   scroll-behavior: smooth;

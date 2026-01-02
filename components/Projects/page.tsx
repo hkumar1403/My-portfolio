@@ -23,7 +23,7 @@ const projects = [
     description:
       "Built a clean, responsive website for an automotive lubricants brand using Next.js and Tailwind CSS, focusing on simplicity, clarity, and the client’s business requirements.",
     stack: "Next.js / Tailwind CSS",
-    link: "https://github.com/yourusername/api",
+    link: "https://www.nitrolube.co.in/",
   },
 ];
 
