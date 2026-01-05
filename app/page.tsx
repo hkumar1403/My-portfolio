@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main className="bg-black text-white">
       <Navbar />
-      <Hero/>
+      <Hero />
       <About />
       <Projects />
       <Contact />
       <Footer />
-      </main>
+    </main>
   );
 }

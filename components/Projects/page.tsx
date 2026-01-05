@@ -86,15 +86,16 @@ function ProjectRow({
   link: string;
 }) {
   return (
-    <motion.a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      viewport={{ once: true }}
-      className="
+    <>
+      <motion.a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="
   group block
   border-t border-white/10
   pt-10
@@ -102,26 +103,26 @@ function ProjectRow({
   transition-colors
   hover:bg-white/2
 "
-    >
-      <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-6 md:gap-8">
-        <div>
-          <h3
-            className="text-3xl md:text-4xl font-medium
+      >
+        <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-6 md:gap-8">
+          <div>
+            <h3
+              className="text-3xl md:text-4xl font-medium
                        transition-colors duration-300
                        group-hover:text-white"
-          >
-            {title}
-          </h3>
+            >
+              {title}
+            </h3>
 
-          <p className="mt-4 max-w-2xl text-gray-400 text-base md:text-lg">
-            {description}
-          </p>
+            <p className="mt-4 max-w-2xl text-gray-400 text-base md:text-lg">
+              {description}
+            </p>
 
-          <p className="mt-6 text-sm tracking-wide text-gray-500">{stack}</p>
-        </div>
+            <p className="mt-6 text-sm tracking-wide text-gray-500">{stack}</p>
+          </div>
 
-        <div
-          className="
+          <div
+            className="
     mt-2
     hidden md:block
     opacity-0 translate-y-2
@@ -129,10 +130,11 @@ function ProjectRow({
     group-hover:opacity-100
     group-hover:translate-y-0
   "
-        >
-          <ArrowUpRight className="w-6 h-6 text-gray-400" />
+          >
+            <ArrowUpRight className="w-6 h-6 text-gray-400" />
+          </div>
         </div>
-      </div>
-    </motion.a>
+      </motion.a>
+    </>
   );
 }
