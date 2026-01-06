@@ -62,8 +62,10 @@ export const MorphingNavigation: React.FC<MorphingNavigationProps> = ({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const resolvedTheme = theme ?? "glass";
+
   const getThemeStyles = useCallback(() => {
-    switch (theme) {
+    switch (resolvedTheme) {
       case "dark":
         return {
           nav: "bg-black/80 border-gray-800",
@@ -86,11 +88,11 @@ export const MorphingNavigation: React.FC<MorphingNavigationProps> = ({
       default:
         return {
           nav: "bg-white/5 border-white/10",
-          text: "text-foreground",
+          text: "text-white",
           button: "bg-black/30 border-white/10",
         };
     }
-  }, [theme, backgroundColor, textColor]);
+  }, [resolvedTheme, backgroundColor, textColor]);
 
   const themeStyles = getThemeStyles();
 
