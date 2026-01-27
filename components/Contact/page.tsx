@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative bg-black text-white px-8 md:px-16 py-32"
+      className="relative bg-transparent text-white px-8 md:px-16 py-32"
     >
       <div
         className="
@@ -62,8 +62,8 @@ export default function Contact() {
           <ContactRow
             icon={<Linkedin size={18} />}
             label="LinkedIn"
-            value="linkedin.com/in/hkumar1403"
-            href="https://linkedin.com/in/hkumar1403"
+            value="https://www.linkedin.com/in/hemantsoftwaredev/"
+            href="https://www.linkedin.com/in/hemantsoftwaredev/"
           />
 
           <ContactRow

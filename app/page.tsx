@@ -7,7 +7,7 @@ import MorphingNavigation from "@/components/lightswind/navbar";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-transparent text-white relative">
       <MorphingNavigation
         links={[
           { id: "Home", label: "Home", href: "#home" },

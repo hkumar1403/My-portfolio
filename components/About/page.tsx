@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen bg-black text-white px-8 md:px-16 py-32 overflow-hidden"
+      className="relative min-h-screen bg-transparent text-white px-8 md:px-16 py-32 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 

@@ -25,7 +25,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 sm:px-8 md:px-16 pt-24 bg-black text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center px-6 sm:px-8 md:px-16 pt-24 bg-transparent text-white overflow-hidden">
       {/* ===== LEFT CONTENT ===== */}
       <div
         className="
